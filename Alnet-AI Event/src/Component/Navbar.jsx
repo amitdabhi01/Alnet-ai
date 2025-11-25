@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="mb-5">
+    <Navbar expand="lg">
       <Container className='justify-content-between'>
         <Navbar.Brand href="#home">
             <h1>ALvent</h1>
@@ -14,9 +14,9 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto"> 
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Features</Nav.Link>
-            <Nav.Link href="#link">Demo Preview</Nav.Link>
+            <Nav.Link href="#home" className='me-4'>Home</Nav.Link>
+            <Nav.Link href="#link" className='me-4'>Features</Nav.Link>
+            <Nav.Link href="#link" className='me-4'>Demo Preview</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Button>BUY NOW</Button>
